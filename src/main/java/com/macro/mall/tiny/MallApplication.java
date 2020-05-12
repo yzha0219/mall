@@ -1,10 +1,11 @@
-package com.macro.mall.tiny.service;
+package com.macro.mall.tiny;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
-@ComponentScan("com.macro.mall.tiny.config")
+//@EnableSwagger2
+//@ComponentScan("com.macro.mall.tiny.config")
 @SpringBootApplication
 public class MallApplication {
 
