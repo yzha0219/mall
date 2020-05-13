@@ -30,13 +30,22 @@
             <!--解决mysql驱动升级到8.0后不生成指定数据库代码的问题-->
             <property name="nullCatalogMeansCurrent" value="true" />
         </jdbcConnection>
-        <!--指定生成model的路径-->
+        <!--MacOS-->
+        <!--&lt;!&ndash;指定生成model的路径&ndash;&gt;
         <javaModelGenerator targetPackage="com.macro.mall.tiny.mbg.model" targetProject="/Users/catty/IdeaProjects/mall/src/main/java"/>
-        <!--指定生成mapper.xml的路径-->
+        &lt;!&ndash;指定生成mapper.xml的路径&ndash;&gt;
         <sqlMapGenerator targetPackage="com.macro.mall.tiny.mbg.mapper" targetProject="/Users/catty/IdeaProjects/mall/src/main/resources"/>
+        &lt;!&ndash;指定生成mapper接口的的路径&ndash;&gt;
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.macro.mall.tiny.mbg.mapper"
+                             targetProject="/Users/catty/IdeaProjects/mall/src/main/java"/>-->
+        <!--Windows-->
+        <!--指定生成model的路径-->
+        <javaModelGenerator targetPackage="com.macro.mall.tiny.mbg.model" targetProject="C:\Users\YZhang2\IdeaProjects\mall\src\main\java"/>
+        <!--指定生成mapper.xml的路径-->
+        <sqlMapGenerator targetPackage="com.macro.mall.tiny.mbg.mapper" targetProject="C:\Users\YZhang2\IdeaProjects\mall\src\main\resources"/>
         <!--指定生成mapper接口的的路径-->
         <javaClientGenerator type="XMLMAPPER" targetPackage="com.macro.mall.tiny.mbg.mapper"
-                             targetProject="/Users/catty/IdeaProjects/mall/src/main/java"/>
+                             targetProject="C:\Users\YZhang2\IdeaProjects\mall\src\main\java"/>
         <!--生成全部表tableName设为%-->
         <table tableName="pms_brand">
             <generatedKey column="id" sqlStatement="MySql" identity="true"/>
